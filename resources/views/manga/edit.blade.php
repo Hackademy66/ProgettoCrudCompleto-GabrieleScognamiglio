@@ -6,7 +6,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <form class="p-5 border shadow" method="POST" action="" enctype="multipart/form-data">
+                <form class="p-5 border shadow" method="POST" action="{{route('manga.update', compact('manga'))}}" enctype="multipart/form-data">
                     
                     @if ($errors->any())
                     <div class="alert alert-danger">
@@ -19,6 +19,8 @@
                     @endif
                     
                     @csrf
+
+                    @method('put')
                     
                     
                     <div class="mb-3">

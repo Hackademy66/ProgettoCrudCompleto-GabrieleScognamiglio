@@ -62,7 +62,22 @@ class MangaController extends Controller
     */
     public function update(Request $request, Manga $manga)
     {
-        //
+
+        if($request->cover){
+        $manga->update([
+            'name'=>$request->name,
+            'publisher'=>$request->publisher,
+            'cover'=>$request->file('cover')->store('public/covers'),
+        ]);
+        }
+        else{
+            $manga->update([
+                'name'=>$request->name,
+                'publisher'=>$request->publisher,
+            ]);
+        }
+
+        return redirect(route('manga.index'))->with('mangaUpdated','Hai aggiornato il manga');
     }
     
     /**

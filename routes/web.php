@@ -23,3 +23,4 @@ Route::get('/manga/create',[MangaController::class,'create'])->name('manga.creat
 Route::post('/manga/store',[MangaController::class,'store'])->name('manga.store');
 Route::get('/manga/show/{manga}',[MangaController::class,'show'])->name('manga.show');
 Route::get('/manga/edit/{manga}',[MangaController::class,'edit'])->name('manga.edit');
+Route::put('/manga/update/{manga}',[MangaController::class,'update'])->name('manga.update');
