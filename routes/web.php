@@ -18,4 +18,5 @@ use App\Http\Controllers\PublicController;
 Route::get('/',[PublicController::class,'homepage'])->name('homepage');
 
 
-route::get('/manga/index',[MangaController::class,'index'])->name('manga.index');
+Route::get('/manga/index',[MangaController::class,'index'])->name('manga.index');
+Route::get('/manga/create',[MangaController::class,'create'])->name('manga.create');

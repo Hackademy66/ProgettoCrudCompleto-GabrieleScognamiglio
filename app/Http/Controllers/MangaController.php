@@ -22,7 +22,7 @@ class MangaController extends Controller
      */
     public function create()
     {
-        //
+        return view('manga.create');
     }
 
     /**
