@@ -14,10 +14,9 @@ return new class extends Migration
         Schema::create('mangas', function (Blueprint $table) {
             $table->id();
 
-            $table->string('series');
-            $table->string('author');
-            $table->string('pubblisher');
-            
+            $table->string('cover');
+            $table->string('name');
+            $table->string('publisher')->nullable();
             $table->timestamps();
         });
     }

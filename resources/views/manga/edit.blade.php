@@ -1,12 +1,12 @@
 <x-layout>
     
     <x-header>
-        <h1>Inserisci Il Tuo Manga</h1>
+        <h1>Modifica un Manga</h1>
     </x-header>
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <form class="p-5 border shadow" method="POST" action="{{route('manga.store')}}" enctype="multipart/form-data">
+                <form class="p-5 border shadow" method="POST" action="" enctype="multipart/form-data">
                     
                     @if ($errors->any())
                     <div class="alert alert-danger">
@@ -36,7 +36,7 @@
                         <input type="text" name="publisher" class="form-control" id="publisher">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Crea</button>
+                    <button type="submit" class="btn btn-primary">Aggiungi Modifica</button>
                 </form>
             </div>
         </div>

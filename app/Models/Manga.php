@@ -10,9 +10,9 @@ class Manga extends Model{
     use HasFactory;
 
     protected $fillable = [
-        'series',
+        'cover',
         'name',
-        'pubblisher',
+        'publisher',
 
     ];
 
