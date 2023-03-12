@@ -42,7 +42,7 @@
                         <input type="text" name="publisher" class="form-control" id="publisher" value="{{$manga->publisher}}">
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Aggiungi Modifica</button>
+                    <button type="submit" class="btn btn-success">Aggiungi Modifica</button>
                 </form>
             </div>
         </div>

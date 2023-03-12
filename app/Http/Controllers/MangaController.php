@@ -85,7 +85,9 @@ class MangaController extends Controller
     */
     public function destroy(Manga $manga)
     {
-        //
+        $manga->delete();
+
+        return redirect(route('manga.index'))->with('mangaDeleted, Hai cancellato il manga');
     }
 }
 

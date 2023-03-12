@@ -23,6 +23,12 @@
                         <p class="card-text">{{$manga->publisher}}</p>
                         <a href="{{route('manga.show',compact('manga'))}}" class="btn btn-primary mt-2">Approfondisci</a>
                         <a href="{{route('manga.edit',compact('manga'))}}" class="btn btn-outline-secondary mt-2">Aggiorna</a>
+                        <form method="POST" action="{{route('manga.destroy',compact('manga'))}}" class="d-inline mt-2">
+                        @csrf
+                        @method('delete')
+                        <button type="submit" class="btn btn-danger">Elimina</button>
+                    
+                    </form>
                     </div>
                 </div>
             </div>
