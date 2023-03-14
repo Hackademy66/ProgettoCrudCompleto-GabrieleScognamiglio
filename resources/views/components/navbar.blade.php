@@ -10,10 +10,16 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('manga.index')}}">indice dei manga</a>
+          <a class="nav-link" href="{{route('manga.index')}}">indice dei Manga</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('manga.create')}}">inserisci dei manga</a>
+          <a class="nav-link" href="{{route('manga.create')}}">inserisci dei Manga</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('comic.index')}}">indice dei Fumetti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('comic.create')}}">inserisci dei Fumetti</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
