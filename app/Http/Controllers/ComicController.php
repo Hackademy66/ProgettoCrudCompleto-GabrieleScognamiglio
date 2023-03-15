@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ComicController extends Controller
 {
@@ -35,6 +36,7 @@ class ComicController extends Controller
             'cover'=>$request->file('cover')->store('public/covers'),
             'name'=>$request->name,
             'publisher'=>$request->publisher,
+            'user_id'=> Auth::user()->id,
         ]);
         
         

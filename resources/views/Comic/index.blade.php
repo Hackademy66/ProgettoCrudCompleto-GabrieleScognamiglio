@@ -21,7 +21,7 @@
                     <div class="card-body">
                         <h5 class="card-text">{{$comic->name}}</h5>
                         <h6 class="card-text">{{$comic->publisher}}</h6>
-                        <p>created by</p>
+                        <p> By {{$comic->user->name}}</p>
 
                         <a href="{{route('comic.show',compact('comic'))}}" class="btn btn-primary mt-2">Approfondisci</a>
                         <a href="{{route('comic.edit',compact('comic'))}}" class="btn btn-outline-secondary mt-2">Aggiorna</a>

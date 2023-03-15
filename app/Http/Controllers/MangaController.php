@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Manga;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MangaController extends Controller
 {
@@ -34,6 +35,7 @@ class MangaController extends Controller
             'cover'=>$request->file('cover')->store('public/covers'),
             'name'=>$request->name,
             'publisher'=>$request->publisher,
+            'user_id'=> Auth::user()->id,
         ]);
         
         

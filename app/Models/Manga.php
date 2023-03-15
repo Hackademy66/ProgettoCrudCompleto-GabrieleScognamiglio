@@ -13,8 +13,14 @@ class Manga extends Model{
         'cover',
         'name',
         'publisher',
+        'user_id',
+        
 
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 
 
 }

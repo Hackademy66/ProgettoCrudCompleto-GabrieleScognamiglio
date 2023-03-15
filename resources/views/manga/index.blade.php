@@ -20,7 +20,8 @@
                     <img src="{{Storage::url($manga->cover)}}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-text">{{$manga->name}}</h5>
-                        <p class="card-text">{{$manga->publisher}}</p>
+                        <h6 class="card-text">{{$manga->publisher}}</h6>
+                        <p> By {{$manga->user->name}}</p>
                         <a href="{{route('manga.show',compact('manga'))}}" class="btn btn-primary mt-2">Approfondisci</a>
                         <a href="{{route('manga.edit',compact('manga'))}}" class="btn btn-outline-secondary mt-2">Aggiorna</a>
                         <form method="POST" action="{{route('manga.destroy',compact('manga'))}}" class="d-inline mt-2">
